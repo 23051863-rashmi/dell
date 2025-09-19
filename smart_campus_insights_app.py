@@ -44,7 +44,7 @@ X = ml_data[['AbsenceRate', 'SessionDuration', 'PagesViewed']]
 y = ml_data['Engagement']
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
 model = DecisionTreeClassifier()
-model.fit(X_train, y_train)//coz data can b skewed coz aajkl sbka data hai..so we need to train the dataset
+model.fit(X_train, y_train)
 y_pred = model.predict(X_test) 
 
 st.text("Model Performance:")
